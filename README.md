@@ -1,43 +1,38 @@
-Why
-Clinics struggle with accurate inventory and organized documentation. This project lets technicians create a device record from a photo, attach documents, and auto‑assign a PM plan.
+# 📸 Biomed Photo Intake / Recepción de fotos biomédicas
 
-V0 Scope (2 weeks)
-Device creation with photos (mobile‑first form).
+## 🎯 Goal / Objetivo
 
-PM templates by class/risk and next PM date.
+Register biomedical devices from photos and auto-assign preventive maintenance plans.  
+Registrar dispositivos biomédicos desde fotos y asignar automáticamente planes de mantenimiento preventivo.
 
-QR generator linking to the device page.
+## 📦 Scope V0 (2 weeks) / Alcance V0 (2 semanas)
 
-Basic dashboard (traffic lights) and CSV export.
+- Device intake with photos (mobile-first form).  
+  Alta de equipo con fotos (formulario móvil).
+- PM templates by class/risk and next PM date.  
+  Plantillas PM por clase/riesgo y fecha próxima.
+- QR generator linked to device page.  
+  Generador de QR vinculado a la ficha del equipo.
+- Basic dashboard (traffic lights) and CSV export.  
+  Dashboard básico (semáforo) y exportación CSV.
 
-Quick start
-Frontend: HTML/CSS/JS (responsive).
+## 🚀 Quick start / Inicio rápido
 
-Backend: FastAPI/Node with SQLite.
+- **Frontend**: HTML/CSS/JS (responsive).
+- **Backend**: FastAPI with SQLite.
+- **Docs**: GitHub Pages for guides and templates.
 
-Docs: GitHub Pages for guides and templates.
+## 🗺️ Roadmap / Ruta técnica
 
-Roadmap
-V0: manual intake + photos + PM template + QR
-V1: OCR for plate (brand/model/serial) with human confirmation
-V2: assisted class suggestion from image
-V3: corrective maintenance workflow from QR + parts usage
+- V0: manual intake + photos + PM template + QR
+- V1: OCR for plate (brand/model/serial)
+- V2: assisted class suggestion from image
+- V3: corrective maintenance workflow from QR
 
-Data model
+## 🧬 Data model / Modelo de datos
+
+```python
 Device(id, class, service, location, brand, model, serial, status, risk, next_pm, photos[])
-
 PMTemplate(class, frequency, checklist)
-
 Document(type, date, device_id, technician, attachments[], notes)
-
-Project plan
-Deliverables: minimal web demo, README, 10 GitHub issues (Project board).
-
-Timeline: Week 1 CRUD+photos+QR; Week 2 PM templates+dashboard+CSV.
-
-Metrics: <2 min intake; 100% devices with next PM; CSV export OK.
-
-Getting involved
-Questions or ideas? duwanmosquera@gmail.com.]
-code.
-
+```
