@@ -38,4 +38,4 @@ Timeline: Week 1 CRUD+photos+QR; Week 2 PM templates+dashboard+CSV.
 Metrics: <2 min intake; 100% devices with next PM; CSV export OK.
 
 Getting involved
-Questions or ideas? duwanmosquer@gmail.com.]
+Questions or ideas? duwanmosquera@gmail.com.]
