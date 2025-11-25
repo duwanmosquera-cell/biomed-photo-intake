@@ -1,5 +1,9 @@
 # 📸 Biomed Photo Intake / Recepción de fotos biomédicas
 
+![Python](https://img.shields.io/badge/python-3.11-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Framework-green)
+![Status](https://img.shields.io/badge/status-in%20progress-yellow)
+
 ## 🎯 Goal / Objetivo
 
 Register biomedical devices from photos and auto-assign preventive maintenance plans.  
