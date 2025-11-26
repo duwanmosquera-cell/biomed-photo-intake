@@ -3,68 +3,66 @@
 ![Python](https://img.shields.io/badge/python-3.11-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Framework-green)
 ![Status](https://img.shields.io/badge/status-in%20progress-yellow)
+# 🧠 Intelligent Management of Biomedical Equipment
 
-# 🧠 Gestión Inteligente de Equipos Biomédicos
-
-## 🌟 Visión del Proyecto
-Este sistema busca digitalizar el registro, trazabilidad y mantenimiento de equipos biomédicos en hospitales, clínicas y laboratorios.  
-Cada equipo se registra mediante foto de su placa, se genera automáticamente su hoja de vida digital y se programa su cronograma de mantenimiento según su clase técnica.
-
----
-
-## 📱 Funcionalidades Clave
-- 📸 Registro de equipos con OCR (reconocimiento de texto en placas).
-- 🗂️ Inventario dinámico con base de datos actualizable.
-- 📄 Hoja de vida digital por equipo (modelo, serie, lote, ubicación, historial).
-- 📅 Cronograma automático de mantenimiento (trimestral, semestral, anual).
-- 🔗 Generación de código QR único por equipo para acceso directo a su hoja de vida.
+## 🌟 Project Vision
+This system aims to digitize the registration, traceability, and maintenance of biomedical equipment in hospitals, clinics, and laboratories.  
+Each device is registered through a photo of its label, automatically generates a digital life record, and is assigned a maintenance schedule based on its technical classification.
 
 ---
 
-## ⚙️ Arquitectura Técnica
-- **Frontend:** App móvil/web para captura de datos y escaneo de QR.
-- **Backend:** FastAPI con endpoints RESTful y documentación Swagger.
-- **OCR:** `pytesseract` o servicios cloud para lectura de placas.
-- **Base de datos:** PostgreSQL con las siguientes tablas:
-  - `equipos` → datos técnicos del equipo.
-  - `hojas_de_vida` → historial y eventos asociados.
-  - `mantenimientos` → cronograma y registros por equipo.
-- **Visualización:** Dashboards en Power BI o interfaz web.
+## 📱 Key Features
+- 📸 Equipment registration with OCR (optical character recognition from labels).
+- 🗂️ Dynamic inventory with an updatable database.
+- 📄 Digital life record per device (model, serial number, batch, location, history).
+- 📅 Automated maintenance scheduling (quarterly, semiannual, annual).
+- 🔗 Unique QR code generation per device for direct access to its life record.
 
 ---
 
-## 🧩 Flujo de Registro
-1. Se detecta un equipo biomédico.
-2. Se toma foto de su placa y se extraen datos con OCR.
-3. Se registra en la base de datos y se genera su hoja de vida.
-4. Se crea un QR único vinculado al equipo.
-5. Se programa automáticamente su cronograma de mantenimiento.
+## ⚙️ Technical Architecture
+- **Frontend:** Mobile/web app for data capture and QR scanning.
+- **Backend:** FastAPI with RESTful endpoints and Swagger documentation.
+- **OCR:** `pytesseract` or cloud services for label reading.
+- **Database:** PostgreSQL with the following tables:
+  - `equipos` → technical data of the device.
+  - `hojas_de_vida` → history and associated events.
+  - `mantenimientos` → schedule and records per device.
+- **Visualization:** Dashboards via Power BI or web interface.
 
 ---
 
-## 🚀 Roadmap Técnico
-- [x] Estructura inicial del backend en FastAPI.
-- [x] Conexión con base de datos PostgreSQL.
-- [ ] Módulo OCR para lectura de placas.
-- [ ] Generación automática de QR por equipo.
-- [ ] Hoja de vida digital con historial y mantenimientos.
-- [ ] Cronograma inteligente según clase de equipo.
-- [ ] Interfaz móvil/web para registro y escaneo.
+## 🧩 Registration Flow
+1. A biomedical device is identified.
+2. A photo of its label is taken and data is extracted via OCR.
+3. The device is registered in the database and its life record is generated.
+4. A unique QR code is created and linked to the device.
+5. A maintenance schedule is automatically assigned based on its classification.
 
 ---
 
-## 📌 Gestión del Proyecto
-Este repositorio se organiza con [GitHub Projects](https://github.com/users/duwanmosquare/projects), donde cada tarea está vinculada a su issue y Pull Request.  
-Las tareas se agrupan en:
-- **Todo:** funcionalidades pendientes.
-- **In Progress:** módulos en desarrollo.
-- **Done:** entregables completados y validados.
+## 🚀 Technical Roadmap
+- [x] Initial backend structure in FastAPI.
+- [x] PostgreSQL database connection.
+- [ ] OCR module for label reading.
+- [ ] Automatic QR generation per device.
+- [ ] Digital life record with history and maintenance logs.
+- [ ] Smart scheduling based on device class.
+- [ ] Mobile/web interface for registration and scanning.
 
 ---
 
-## 🤝 Cómo Contribuir
-1. Haz fork del repositorio.
-2. Crea una rama para tu funcionalidad:
+## 📌 Project Management
+This repository is organized using [GitHub Projects](https://github.com/users/duwanmosquare/projects), where each task is linked to its issue and Pull Request.  
+Tasks are grouped into:
+- **Todo:** pending features.
+- **In Progress:** modules under development.
+- **Done:** completed and validated deliverables.
+
+---
+
+## 🤝 How to Contribute
+1. Fork the repository.
+2. Create a branch for your feature:
    ```bash
-   git checkout -b feature/nueva-funcionalidad
-```
+   git checkout -b feature/new-feature
